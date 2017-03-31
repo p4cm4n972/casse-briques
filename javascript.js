@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    var bkg = new Image('width:canvas.width, height: canvas.height');
+    var bkg = new Image('width:2160px; height:canvas.height');
     bkg.src = 'bkg.jpg';
     var raquette = document.getElementById("raquette");
     var ball = document.getElementById("ball");
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var paddleX = (canvas.width - paddleWidth) / 2;
     var rightPressed = false;
     var leftPressed = false;
-    var brickRowCount = 25;
+    var brickRowCount = 22;
     var brickColumnCount = 15;
     var brickWidth = 75;
     var brickHeight = 20;
@@ -142,7 +142,8 @@ function drawBall() {
     }
 
     function draw() {
-        ctx.drawImage(bkg, -500, 0);
+        //ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(bkg, 0, 0);
         drawBricks();
         drawBall();
         drawPaddle();
