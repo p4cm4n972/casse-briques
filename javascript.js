@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var dx = 2;
     var dy = -2;
     var paddleHeight = 30;
-    var paddleWidth = 150;
+    var paddleWidth = 200;
     var paddleX = (canvas.width - paddleWidth) / 2;
     var rightPressed = false;
     var leftPressed = false;
