@@ -6,18 +6,18 @@ window.addEventListener('DOMContentLoaded', function () {
     bkg.src = 'bkg.jpg';
     var raquette = document.getElementById("raquette");
     var ball = document.getElementById("ball");
-    var ballRadius = 60;
+    var ballRadius = 80;
     var x = canvas.width / 2;
-    var y = canvas.height - 30;
-    var dx = 2;
-    var dy = -2;
+    var y = canvas.height - 100;
+    var dx = 5;
+    var dy = -5;
     var paddleHeight = 40;
     var paddleWidth = 200;
     var paddleX = (canvas.width - paddleWidth) / 2;
     var rightPressed = false;
     var leftPressed = false;
     var brickRowCount = 22;
-    var brickColumnCount = 15;
+    var brickColumnCount = 8;
     var brickWidth = 150;
     var brickHeight = 40;
     var brickPadding = 10;
@@ -166,9 +166,9 @@ function drawBall() {
                     document.location.reload();
                 } else {
                     x = canvas.width / 2;
-                    y = canvas.height - 30;
-                    dx = 3;
-                    dy = -3;
+                    y = canvas.height - 100;
+                    dx = 13;
+                    dy = -13;
                     paddleX = (canvas.width - paddleWidth) / 2;
                 }
             }
