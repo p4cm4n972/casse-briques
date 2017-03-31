@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     bkg.src = 'bkg.jpg';
     var raquette = document.getElementById("raquette");
     var ball = document.getElementById("ball");
-    var ballRadius = 30;
+    var ballRadius = 60;
     var x = canvas.width / 2;
     var y = canvas.height - 30;
     var dx = 2;
@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', function () {
     var leftPressed = false;
     var brickRowCount = 22;
     var brickColumnCount = 15;
-    var brickWidth = 75;
-    var brickHeight = 20;
+    var brickWidth = 150;
+    var brickHeight = 40;
     var brickPadding = 10;
     var brickOffsetTop = 30;
     var brickOffsetLeft = 30;
