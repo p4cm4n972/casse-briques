@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', function () {
                         b.status = 0;
                         score++;
                         if (score == brickRowCount * brickColumnCount) {
-                           // alert("YOU WIN, CONGRATS!");
+                            alert("YOU WIN, CONGRATS!");
                             document.location.reload();
                         }
                     }
@@ -160,7 +160,7 @@ function drawBall() {
             if (x > paddleX && x < paddleX + paddleWidth) {
                 dy = -dy;
             } else {
-                //lives--;
+                lives--;
                 if (!lives) {
                     alert("GAME OVER");
                     document.location.reload();
